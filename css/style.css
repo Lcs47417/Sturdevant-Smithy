@@ -58,19 +58,16 @@ footer {
 table {
   border-collapse: collapse;
   width: 100%
-
 }
 
 th, td {
   padding: 0.75rem;
   text-align: left;
-
 }
 
 th {
   background-color: #1D263E;
   color: #C0C0C0;
-
 }
 
 tbody tr:nth-child(even) {
