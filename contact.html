@@ -21,8 +21,22 @@
   </header>
 
   <main id="main-content">
-    <h2>Contact</h2>
-    <p>Full contact details are coming soon.</p>
+    <h2>Contact information</h2>
+    <p>Lets see what you need</p>
+    <form action="https://formspree.io/f/your-form-id" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+    <label for="knife-orders">Basic Knife</label>
+    <input type="radio" id="lesson-group" name="lesson-type" value="group" checked>
+    <label for="custom-knife">Customer ordered knife</label>
+    <input type="radio" id="lesson-private" name="lesson-type" value="private">
+    <label for="message">Any problems or questions, tell us here too</label>
+    <textarea id="message" name="message" required></textarea>
+    <button type="submit">Send Booking Request</button>
+
+    </form>
   </main>
 
   <footer>
