@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: Georgia, "Times New Roman", serif;
   color: #c0c0c0;
@@ -212,3 +216,15 @@ form {
   justify-content: flex-start;
   padding-bottom: 1rem;
  }
+
+ footer {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+  background-color: #0f1320;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
