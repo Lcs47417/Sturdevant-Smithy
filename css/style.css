@@ -162,6 +162,15 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
 }
+
+#location-button {
+  display: block;
+  background-color: #D65A31;
+  padding: 16px;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color:#C0C0C0;
+}
 form {
   background-color: #0f1320;
   padding: 32px;
@@ -237,4 +246,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#table-header {
+  background-color: #0f1320;
 }

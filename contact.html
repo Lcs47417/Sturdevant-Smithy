@@ -38,14 +38,32 @@
     <input type="radio" id="problem" name="option" value="problem">
     <label for="message">Tells us about the kind of knife you want here, for example, what kind of blade style you want or if you want a wooden handel, etc. You can also tell here if you had a problem</label>
     <textarea id="message" name="message" required></textarea>
-    <button type="submit">Send order</button>
-
-    </form>
+    <button type="submit">Send order</button> 
+  </form>
+    <button id="location-button" onclick="getLocation()">See How Close You Are</button>
+    <p id="location-message"></p>
   </main>
  </div>
   <footer>
     <p>&copy; 2026 Sturdevant Smithy</p>
   </footer>
 </div>
+<script>
+  function getLocation() {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  }
+
+  function showPosition(position) {
+    var lat = position.coords.latitude.toFixed(1);
+    var lon = position.coords.longitude.toFixed(1);
+    document.getElementById("location-message").textContent =
+      "You're near " + lat + ", " + lon + ". The Sturdevant smithy is located in the central virginian area. This may affect shipping times and costs.";
+  }
+
+  function showError(error) {
+    document.getElementById("location-message").textContent =
+      "We couldn't get your location, but that's alright. You can still browse the rest of the site.";
+  }
+</script>
 </body>
 </html>
