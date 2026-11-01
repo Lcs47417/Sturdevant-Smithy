@@ -3,6 +3,10 @@
   padding: 0;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex : 1;
   font-family: Georgia, "Times New Roman", serif;
   color: #c0c0c0;
   background-color: #1d263e;
@@ -61,13 +65,6 @@ h2 {
 
 p {
   margin-bottom: 32px;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.875rem;
-  color: #666666;
-  padding: 20px;
 }
 
 table {
@@ -256,7 +253,10 @@ form {
  }
 
  footer {
+  flex: 1;
+  max-height: 100px;
   width: 100%;
+  margin-top: auto;
   margin-left: 0;
   margin-right: 0;
   box-sizing: border-box;
@@ -271,8 +271,14 @@ form {
   background-color: #0f1320;
 }
 
+#Style-header {
+  background-color: #0f1320;
+  color: #ffffff;
+  padding: 20px;
+}
+
 @media (min-width: 700px) {
-  .page-layout {
+  .style-layout {
     flex-direction: row;
   }
 
