@@ -226,7 +226,7 @@ form {
 .image img {
   min-width: 200px;
   max-width: 400px;
-  width: 100%;
+  width: 400px;
   height: auto;
   display: block;
   border-radius: 8px;
@@ -254,7 +254,6 @@ form {
 
  footer {
   flex: 1;
-  max-height: 100px;
   width: 100%;
   margin-top: auto;
   margin-left: 0;
