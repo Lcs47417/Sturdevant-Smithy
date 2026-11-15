@@ -249,6 +249,7 @@ form {
   margin-right: 0;
   box-sizing: border-box;
   background-color: #0f1320;
+  padding-bottom: 1rem;
 
   display: flex;
   flex-direction: column;
